@@ -1,0 +1,144 @@
+x="foo"
+
+x = "foo"
+xe
+list(X)
+
+ = 'hello whats up'
+>>> x.split()
+['hello', 'whats', 'up']
+
+>>> for thing in x:
+...     print thing
+... 
+h
+e
+l
+l
+o
+ 
+w
+h
+a
+t
+s
+ 
+u
+p
+ >>> def funky (word):
+...     return word + 'eth'
+... 
+>>> funky('foo')
+'fooeth'
+>>> funkey('bar')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'funkey' is not defined
+>>> funky('baz')
+'bazeth'
+>>> 
+
+
+... 
+>>> jumble('foo')
+'foo'
+>>> jumble('gullible')
+'gullible'
+>>> x='gullible'
+>>> x[0]
+'g'
+>>> x[1]
+'u'
+>>> list(x)
+['g', 'u', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y = list(x)
+>>> y
+['g', 'u', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y[1]
+'u'
+>>> y[1] = y[2]
+>>> y
+['g', 'l', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y
+['g', 'l', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y[1] = y[2]
+>>> y[2] = y[1]
+>>> y
+['g', 'l', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y[2]='u'
+>>> y
+['g', 'l', 'u', 'l', 'i', 'b', 'l', 'e']
+>>> y = list(x)
+>>> toilet = y[2]
+>>> y[2] = y[1] = toilet
+>>> y
+['g', 'l', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y[1], y[2] = y[2], y[1]
+>>> y
+['g', 'l', 'l', 'l', 'i', 'b', 'l', 'e']
+>>> y[3], y[5] = y[5], y[3]
+>>> y
+['g', 'l', 'l', 'b', 'i', 'l', 'l', 'e']
+>>> ''.join(y)
+'gllbille'
+
+       IndentationError: expected an indented block
+>>> random.randint(1,100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'random' is not defined
+>>> x[ len(x -1) ]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+>>> x
+'gullible'
+>>> x[0]
+'g'
+>>>  def scramble(word):
+  File "<stdin>", line 1
+    def scramble(word):
+    ^
+IndentationError: unexpected indent
+>>> def scramble(word):
+...     letters = word.split()
+...     
+... def scramble(word):
+  File "<stdin>", line 4
+    def scramble(word):
+      ^
+SyntaxError: invalid syntax
+>>> def scarmble(word):
+...     letters = word.split()
+...     fo
+... 
+>>> def scramble(word):
+...     letters = word.split()
+... for i in range700):
+  File "<stdin>", line 3
+    for i in range700):
+      ^
+SyntaxError: invalid syntax
+>>> def scramble(word):
+...     letters = word.split()
+...     for i in range(700):
+...             a = random.randint(1, len(x) -2)
+...     letters = word.split()
+... 
+
+
+
+>>> import random
+>>> def scramble(word):
+...     letters = list(word)
+...     for i in range(700):
+...             a = random.randint(1, len(word) - 2)
+...             b = random.randint(1, len(word) - 2)
+...             letters[a], letters[b] = letters[b], letters[a]
+...     return ''.join(letters)
+... 
+>>> scramble('hello')
+'hlleo'
+>>> scramble('lakshmi')
+'lskamhi'
+>>> 
