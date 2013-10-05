@@ -1,0 +1,30 @@
+>>> def pig(sentence):
+...     words = sentence.split()
+...     for index in range( len(words) ):
+...             print words[index][0]
+... 
+>>> pig('hello whats up')
+h
+w
+u
+>>> 
+  
+
+ >>> def pig(sentence):
+...     words = sentence.split()
+...     for index in range( len(words) ):
+...             first = words[index][0]
+...             if first in ['a', 'e', 'i', 'o', 'u']:
+...                     print words[index] + 'yay'
+...             else:
+...                     print words[index] + 'ay'
+... 
+>>> pig('hello whats up')
+helloay
+whatsay
+upyay
+>>> pig ('apples bears and pickles')
+applesyay
+bearsay
+andyay
+picklesay
